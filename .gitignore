@@ -1,0 +1,142 @@
+# ==============================================================================
+# Git Ignore Configuration for ML Challenge 2026: Business Entity Resolution
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Byte-compiled / Optimized / Python Caches
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# Virtual Environments
+# ------------------------------------------------------------------------------
+venv/
+venv*/
+.venv/
+.venv*/
+env/
+env*/
+ENV/
+env.bak/
+venv.bak/
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# Operating System Artifacts (macOS / Linux / Windows)
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------------------------
+# IDEs and Text Editors
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# Testing, Coverage & Code Quality
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# ------------------------------------------------------------------------------
+# Jupyter Notebooks & IPython
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.trash/
+
+# ------------------------------------------------------------------------------
+# ML Datasets & Raw Competition Data (> 2GB TSVs)
+# ------------------------------------------------------------------------------
+student_resource/dataset/
+**/dataset/
+data/
+datasets/
+raw_data/
+
+# ------------------------------------------------------------------------------
+# Pipeline Caching & Intermediate Artifacts
+# ------------------------------------------------------------------------------
+cache/
+**/cache/
+.tmp/
+**/.tmp/
+*_tmp/
+**/blocking_tmp/
+*.parquet
+*.feather
+*.arrow
+
+# ------------------------------------------------------------------------------
+# Pipeline Output Directories & Submission Files
+# ------------------------------------------------------------------------------
+output/
+output_train/
+**/output/
+**/output_train/
+output_*/
+**/output_*/
+results/
+submissions/
+submission/
+
+# ------------------------------------------------------------------------------
+# Large Model Weights, Checkpoints & Serialization Artifacts
+# ------------------------------------------------------------------------------
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
