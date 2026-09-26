@@ -1,0 +1,19 @@
+{
+  "threshold": 0.8500000000000001,
+  "val_f_half": 0.8578586579317816,
+  "feature_cols": [
+    "name_jw",
+    "name_lev",
+    "name_jaccard",
+    "name_exact",
+    "addr_jw",
+    "addr_lev",
+    "addr_jaccard",
+    "pin_match",
+    "country_match",
+    "suffix_match",
+    "script_mismatch",
+    "len_diff_name",
+    "len_diff_addr"
+  ]
+}

@@ -1,0 +1,12 @@
+# Business Entity Resolution — pinned dependencies
+# Each entry maps to what actually imports it in src/ — kept in sync with the
+# code, not aspirational. If you add a new import, add it here in the same
+# change; if you remove one, prune it here too.
+
+pandas>=2.2,<3          # normalize.py, blocking.py, features.py, train.py, predict.py — TSV/Parquet I/O
+numpy>=1.26,<2          # features.py, train.py — feature arrays, threshold sweep math
+pyarrow>=15             # required by pandas for to_parquet/read_parquet (Parquet caches + feature parts)
+duckdb>=1.0             # blocking.py, features.py — SQL joins over normalized Parquet without full in-memory loads
+rapidfuzz>=3.9          # features.py — Jaro-Winkler / Levenshtein similarity (C++, fast at scale)
+scikit-learn>=1.4,<2    # train.py — GroupShuffleSplit (entity-level train/validation split)
+lightgbm>=4.3           # train.py, predict.py — the matching classifier; MIT-licensed, well under the 8B-param cap
